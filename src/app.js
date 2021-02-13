@@ -15,7 +15,7 @@ class App extends React.Component{
         const  { data } = this.state;
         return(
             <div className={styles.container}>
-                <Info/>
+                <Info data={data}/>
                 <Location/>
                 <Graph/>
             </div>
