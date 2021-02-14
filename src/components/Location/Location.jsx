@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from './Location.module.css';
 import {NativeSelect, FormControl} from '@material-ui/core';
 import {getplaces} from '../../api';
