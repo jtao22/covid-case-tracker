@@ -1,6 +1,10 @@
-
 .container {
     display: flex;
     justify-content: center;
     width: 85%; 
+}
+@media (max-width: 770px) {
+    .card {
+      margin: 2% 0 !important;
+    }
 }
