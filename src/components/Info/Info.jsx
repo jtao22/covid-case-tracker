@@ -11,7 +11,7 @@ const Info = ({data:{ confirmed ,recovered, deaths, lastUpdate }}) => {
     return(
         <div className = {styles.container}>
             <Grid container spacing={3} justify="center">
-                <Grid item component={Card} className = {cx(styles.card, styles.infected)}>
+                <Grid item component={Card} xs = {12} md={3} className = {cx(styles.card, styles.infected)}>
                     <CardContent>
                         <Typography color = "textSecondary" gutterBottom> Contracted</Typography>
                         <Typography variant = "h6" ><CountUp start = {0} end = {confirmed.value} duration={2.4} separator=","/></Typography>
@@ -19,7 +19,7 @@ const Info = ({data:{ confirmed ,recovered, deaths, lastUpdate }}) => {
                         <Typography variant="body2">Total cases</Typography>
                     </CardContent>
                 </Grid>
-                <Grid item component={Card} className = {cx(styles.card, styles.recovered)}>
+                <Grid item component={Card} xs = {12} md={3} className = {cx(styles.card, styles.recovered)}>
                     <CardContent>
                         <Typography color = "textSecondary" gutterBottom> Recovered</Typography>
                         <Typography variant = "h6" ><CountUp start = {0} end = {recovered.value} duration={2.4} separator=","/></Typography>
@@ -27,7 +27,7 @@ const Info = ({data:{ confirmed ,recovered, deaths, lastUpdate }}) => {
                         <Typography variant="body2">Total recovered</Typography>
                     </CardContent>
                 </Grid>
-                <Grid item component={Card} className = {cx(styles.card, styles.deaths)}>
+                <Grid item component={Card} xs = {12} md={3} className = {cx(styles.card, styles.deaths)}>
                     <CardContent>
                         <Typography color = "textSecondary" gutterBottom> Deaths</Typography>
                             <Typography variant = "h6" ><CountUp start = {0} end = {deaths.value} duration={2.4} separator=","/></Typography>
